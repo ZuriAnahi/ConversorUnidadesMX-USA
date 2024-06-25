@@ -1,0 +1,221 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "valor",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unidad",
+              "type": "LIST_OF_UNITS"
+            },
+            {
+              "name": "objetivoUnit",
+              "type": "LIST_OF_UNITS"
+            }
+          ],
+          "name": "converUnitIntent",
+          "samples": [
+            "cómo convertir {valor} {unidad} a {objetivoUnit}",
+            "traduce {valor} {unidad} a {objetivoUnit}",
+            "qué es {valor} {unidad} en {objetivoUnit}",
+            "quiero convertir {valor} {unidad} a {objetivoUnit}",
+            "cambia {valor} {unidad} a {objetivoUnit}",
+            "cuántos {objetivoUnit} hay en {valor} {unidad}",
+            "convierte {valor} {unidad} a {objetivoUnit}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "cm"
+                ],
+                "value": "centímetro"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pulgadas",
+                  "in"
+                ],
+                "value": "pulgada"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "metros",
+                  "m"
+                ],
+                "value": "metro"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "kilómetros",
+                  "km"
+                ],
+                "value": "kilómetro"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "gramos",
+                  "g"
+                ],
+                "value": "gramo"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "kilogramos",
+                  "kg"
+                ],
+                "value": "kilogramo"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "grados celsius",
+                  "°C"
+                ],
+                "value": "celsius"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "grados fahrenheit",
+                  "°F"
+                ],
+                "value": "fahrenheit"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "litros",
+                  "l"
+                ],
+                "value": "litro"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "mililitros",
+                  "ml"
+                ],
+                "value": "mililitro"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "yardas",
+                  "yd"
+                ],
+                "value": "yarda"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "millas",
+                  "mi"
+                ],
+                "value": "milla"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "onzas",
+                  "oz"
+                ],
+                "value": "onza"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "libras",
+                  "lb"
+                ],
+                "value": "libra"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pintas",
+                  "pt"
+                ],
+                "value": "pinta"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "cuartos de galón",
+                  "qt"
+                ],
+                "value": "cuarto de galón"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "galones",
+                  "gal"
+                ],
+                "value": "galón"
+              }
+            }
+          ],
+          "name": "LIST_OF_UNITS"
+        }
+      ],
+      "invocationName": "corversion unidades"
+    }
+  }
+}

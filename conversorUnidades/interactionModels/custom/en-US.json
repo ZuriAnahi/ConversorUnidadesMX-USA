@@ -1,0 +1,214 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "valor",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unidad",
+              "type": "LIST_OF_UNITS"
+            },
+            {
+              "name": "objetivoUnit",
+              "type": "LIST_OF_UNITS"
+            }
+          ],
+          "name": "converUnitIntent",
+          "samples": [
+            "change {valor} {unidad} to {objetivoUnit}",
+            "I want to convert {valor} {unidad} to {objetivoUnit}",
+            "what is {valor} {unidad} in {objetivoUnit}",
+            "translate {valor} {unidad} to {objetivoUnit}",
+            "how to convert {valor} {unidad} to {objetivoUnit}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "synonyms": [
+                  "cm"
+                ],
+                "value": "centimeter"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "inches",
+                  "in"
+                ],
+                "value": "inch"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "meters",
+                  "m"
+                ],
+                "value": "meter"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "kilometers",
+                  "km"
+                ],
+                "value": "kilometer"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "grams",
+                  "g"
+                ],
+                "value": "gram"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "kilograms",
+                  "kg"
+                ],
+                "value": "kilogram"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "degrees celsius",
+                  "degree celsius",
+                  "°C"
+                ],
+                "value": "celsius"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "degrees fahrenheit",
+                  "degree fahrenheit",
+                  "°F"
+                ],
+                "value": "fahrenheit"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "liters",
+                  "l"
+                ],
+                "value": "liter"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "milliliters",
+                  "ml"
+                ],
+                "value": "milliliter"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "yards",
+                  "yd"
+                ],
+                "value": "yard"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "miles",
+                  "mi"
+                ],
+                "value": "mile"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "ounces",
+                  "oz"
+                ],
+                "value": "ounce"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pounds",
+                  "lb"
+                ],
+                "value": "pound"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "pints",
+                  "pt"
+                ],
+                "value": "pint"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "quarts",
+                  "qt"
+                ],
+                "value": "quart"
+              }
+            },
+            {
+              "name": {
+                "synonyms": [
+                  "gallons",
+                  "gal"
+                ],
+                "value": "gallon"
+              }
+            }
+          ],
+          "name": "LIST_OF_UNITS"
+        }
+      ],
+      "invocationName": "unit converter"
+    }
+  }
+}
